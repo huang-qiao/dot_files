@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+
+export OPENGROK_TOMCAT_BASE=/usr/local/Cellar/tomcat/8.0.30/libexec
+
+source ${HOME}/Tools/dot_files/themes/colors.theme.bash
+source ${HOME}/Tools/dot_files/aliases/available/general.aliases.bash
