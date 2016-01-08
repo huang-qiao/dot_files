@@ -2,5 +2,10 @@
 
 export OPENGROK_TOMCAT_BASE=/usr/local/Cellar/tomcat/8.0.30/libexec
 
-source ${HOME}/Tools/dot_files/themes/colors.theme.bash
-source ${HOME}/Tools/dot_files/aliases/available/general.aliases.bash
+source ${HOME}/Tools/dot_files/bash/themes/colors.theme.bash
+source ${HOME}/Tools/dot_files/bash/aliases/available/general.aliases.bash
+source ${HOME}/Tools/dot_files/bash/completion/available/git.completion.bash
+source ${HOME}/Tools/dot_files/bash/completion/available/brew.completion.bash
+source ${HOME}/Tools/dot_files/bash/completion/available/defaults.completion.bash
+source ${HOME}/Tools/dot_files/bash/completion/available/dirs.completion.bash
+
