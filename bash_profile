@@ -7,6 +7,8 @@ export PATH=${PATH}:/home/qiao/Android/Sdk/ndk-bundle
 export PATH=${PATH}:/home/qiao/Tools/scripts
 export PATH=/usr/share/tomcat7/bin:${PATH}
 export PATH=/usr/local/Cellar/tomcat/8.0.30/bin/catalina:${PATH}
+export ANDROID_NDK=${HOME}/Android/Sdk/ndk-bundle
+export ANDROID_NDK_HOME=$ANDROID_NDK
 
 alias tree='tree --charset ASCII'
 alias htags='htags -aFghInosxv --show-position --tabs 4'
