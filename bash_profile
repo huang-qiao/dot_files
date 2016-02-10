@@ -6,6 +6,7 @@ export PATH=${PATH}:/home/qiao/Android/Sdk/platform-tools
 export PATH=${PATH}:/home/qiao/Android/Sdk/ndk-bundle
 export PATH=${PATH}:/home/qiao/Tools/scripts
 export PATH=/usr/share/tomcat7/bin:${PATH}
+export PATH=/usr/local/Cellar/tomcat/8.0.30/bin/catalina:${PATH}
 
 alias tree='tree --charset ASCII'
 alias htags='htags -aFghInosxv --show-position --tabs 4'
@@ -14,6 +15,10 @@ alias grep='grep --color -rns --exclude-dir=".svn" --exclude-dir=".git"'
 
 source ${HOME}/Tools/dot_files/bash/themes/colors.theme.bash
 source ${HOME}/Tools/dot_files/bash/aliases/available/general.aliases.bash
+
+if [ -f /opt/ros/indigo/setup.bash ]; then
+    source /opt/ros/indigo/setup.bash;
+fi;
 
 # Add tab completion for many Bash commands
 if which brew > /dev/null && [ -f "$(brew --prefix)/share/bash-completion/bash_completion" ]; then
