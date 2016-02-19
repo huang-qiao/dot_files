@@ -7,7 +7,7 @@ export PATH=${PATH}:/home/qiao/Android/Sdk/ndk-bundle
 export PATH=${PATH}:/home/qiao/Tools/scripts
 export PATH=/usr/share/tomcat7/bin:${PATH}
 export PATH=/usr/local/Cellar/tomcat/8.0.30/bin/catalina:${PATH}
-export ANDROID_NDK=${HOME}/Android/Sdk/ndk-bundle
+export ANDROID_NDK=${HOME}/Tools/android-ndk-r10e
 export ANDROID_NDK_HOME=$ANDROID_NDK
 
 alias tree='tree --charset ASCII'
@@ -24,14 +24,14 @@ fi;
 
 # Add tab completion for many Bash commands
 if which brew > /dev/null && [ -f "$(brew --prefix)/share/bash-completion/bash_completion" ]; then
-	source "$(brew --prefix)/share/bash-completion/bash_completion";
+    source "$(brew --prefix)/share/bash-completion/bash_completion";
 elif [ -f /etc/bash_completion ]; then
-	source /etc/bash_completion;
+    source /etc/bash_completion;
 fi;
 
 # Enable tab completion for `g` by marking it as an alias for `git`
 if type _git &> /dev/null && [ -f /usr/local/etc/bash_completion.d/git-completion.bash ]; then
-	complete -o default -o nospace -F _git g;
+    complete -o default -o nospace -F _git g;
 fi;
 
 source ${HOME}/Tools/dot_files/bash/completion/available/git.completion.bash
