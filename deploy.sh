@@ -2,7 +2,7 @@
 
 # qiao's coding friends
 sudo apt-get update
-sudo apt-get install -y git vim geany meld openssh-server tomcat7 ctags
+sudo apt-get install -y git vim geany meld openssh-server tomcat7 ctags gitk gitweb tree
 
 # this is for asus CV repo build dependency
 sudo apt-get install -y ant
@@ -11,7 +11,7 @@ sudo apt-get install -y ant
 mkdir -p ${HOME}/Tools && cd ${HOME}/Tools
 git clone https://github.com/huang-qiao/dot_files.git
 cd ${HOME}
-echo "# qiao's extra bash settings"
+echo "# qiao's extra bash settings" >> ${HOME}/.bashrc
 echo "source ${HOME}/Tools/dot_files/bashrc.extra" >> ${HOME}/.bashrc
 
 # ROS
@@ -21,6 +21,7 @@ sudo apt-get update
 sudo apt-get install -y ros-indigo-desktop-full
 sudo rosdep init
 rosdep update
+sudo apt-get install -y python-rosinstall
 
 # CMake 3.x
 sudo apt-get install -y software-properties-common
