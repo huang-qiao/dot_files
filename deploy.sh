@@ -5,7 +5,13 @@ case "$(uname -s)" in
         ;;
 
     Linux)
-        # qiao's coding friends
+ 		# ssh-key
+		ssh-keygen -t rsa -b 4096 -C "qiao.helloworld@gmail.com"
+		ssh-add ~/.ssh/id_rsa
+
+		read -p "add SSH key to github, then press [ENTER] to continue... " -n1 -s
+
+		# qiao's coding friends
 		sudo apt-get update
 		sudo apt-get install -y git vim geany meld openssh-server tomcat7 ctags gitk gitweb tree
 		# this is for asus CV repo build dependency
@@ -47,10 +53,6 @@ case "$(uname -s)" in
 		  lib32ncurses5-dev x11proto-core-dev libx11-dev lib32z-dev ccache \
 		  libgl1-mesa-dev libxml2-utils xsltproc unzip
 
-		# ssh-key
-		ssh-keygen -t rsa -b 4096 -C "qiao.helloworld@gmail.com"
-		ssh-add ~/.ssh/id_rsa
-
 		# link config files
 		rm -rfv ${HOME}/.config/geany
 		ln -s ${HOME}/Tools/dot_files/geany ${HOME}/.config/geany
@@ -58,6 +60,14 @@ case "$(uname -s)" in
 		# git global setting
 		git config --global user.email "qiao.helloworld@gmail.com"
 		git config --global user.name "qiao"
+
+		# for tomcat7 deploy
+		sudo mkdir -p /usr/share/tomcat7/logs
+
+		# for OpenGrok deploy
+		sudo chmod -R 777 /var/lib/tomcat7/webapps
+		sudo mkdir -p /var/opengrok
+		sudo chmod -R 777 /var/opengrok
 
 		# Don't forget tools can't be installed via apt-get
 		# AndoridStudio, Qt Creator, OpenGrok
