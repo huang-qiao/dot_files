@@ -77,6 +77,7 @@ case "$(uname -s)" in
 		wget -c http://java.net/projects/opengrok/downloads/download/opengrok-0.12.1.5.tar.gz
 		wget -c https://dl.google.com/android/ndk/android-ndk-r10e-linux-x86_64.bin
 		wget -c https://dl.google.com/dl/android/studio/ide-zips/1.5.1.0/android-studio-ide-141.2456560-linux.zip
+        wget -c http://download.qt.io/official_releases/qtcreator/3.6/3.6.0/qt-creator-opensource-linux-x86_64-3.6.0.run
 		echo "Done."
 		echo "Don't forget to uncompress these files and put them to right place."
 		cd ${HOME}
