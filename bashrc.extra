@@ -1,11 +1,12 @@
-export PATH=${HOME}/Tools/opengrok-0.12.1.5/bin:${PATH}
-export OPENGROK_TOMCAT_BASE=/usr/local/Cellar/tomcat/8.0.30/libexec
-export LIBGL_ALWAYS_SOFTWARE=1
+export PATH=${PATH}:${HOME}/Tools/opengrok-0.12.1.5/bin
+export PATH=${PATH}:${HOME}/Tools/qtcreator-3.6.0/bin
 export PATH=${PATH}:/home/qiao/Android/Sdk/platform-tools
 export PATH=${PATH}:/home/qiao/Android/Sdk/ndk-bundle
 export PATH=${PATH}:/home/qiao/Tools/scripts
-export PATH=/usr/share/tomcat7/bin:${PATH}
-export PATH=/usr/local/Cellar/tomcat/8.0.30/bin/catalina:${PATH}
+export PATH=${PATH}:/usr/share/tomcat7/bin
+export PATH=${PATH}:/usr/local/Cellar/tomcat/8.0.30/bin/catalina
+export OPENGROK_TOMCAT_BASE=/usr/local/Cellar/tomcat/8.0.30/libexec
+export LIBGL_ALWAYS_SOFTWARE=1
 export ANDROID_NDK=${HOME}/Tools/android-ndk-r10e
 export ANDROID_NDK_HOME=$ANDROID_NDK
 
