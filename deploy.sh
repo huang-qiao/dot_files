@@ -63,6 +63,7 @@ case "$(uname -s)" in
 
 		# for tomcat7 deploy
 		sudo mkdir -p /usr/share/tomcat7/logs
+		sudo chmod -R 777 /usr/share/tomcat7/logs
 
 		# for OpenGrok deploy
 		sudo chmod -R 777 /var/lib/tomcat7/webapps
@@ -71,5 +72,12 @@ case "$(uname -s)" in
 
 		# Don't forget tools can't be installed via apt-get
 		# AndoridStudio, Qt Creator, OpenGrok
+		mkdir -vp ${HOME}/Downloads
+		cd ${HOME}/Downloads
+		wget -c http://java.net/projects/opengrok/downloads/download/opengrok-0.12.1.5.tar.gz
+		wget -c https://dl.google.com/android/ndk/android-ndk-r10e-linux-x86_64.bin
+		wget -c https://dl.google.com/dl/android/studio/ide-zips/1.5.1.0/android-studio-ide-141.2456560-linux.zip
+		echo "Done."
+		echo "Don't forget to uncompress these files and put them to right place."
+		cd ${HOME}
 esac
-
