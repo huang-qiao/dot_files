@@ -67,7 +67,7 @@ case "$(uname -s)" in
 
 		# for OpenGrok deploy
 		sudo chmod -R 777 /var/lib/tomcat7/webapps
-		sudo mkdir -p /var/opengrok
+		sudo mkdir -p /var/opengrok/src
 		sudo chmod -R 777 /var/opengrok
 
 		# Don't forget tools can't be installed via apt-get
