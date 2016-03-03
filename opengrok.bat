@@ -1,0 +1,1 @@
+java -jar C:\Softwares\opengrok-0.12.1\lib\opengrok.jar -W C:\Softwares\opengrok-0.12.1\configuration.xml -c C:\Softwares\ctags58\ctags.exe -P -S -v -s D:\Users\qianhao_huang.ASUS\opengrok_projects -d C:\Softwares\opengrok-0.12.1
