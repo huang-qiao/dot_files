@@ -13,7 +13,7 @@ case "$(uname -s)" in
 
 		# qiao's coding friends
 		sudo apt-get update
-		sudo apt-get install -y git vim geany meld openssh-server tomcat7 ctags gitk gitweb tree
+		sudo apt-get install -y git vim geany meld openssh-server tomcat7 ctags gitk gitweb git-gui tree clang-format-3.6
 		# this is for asus CV repo build dependency
 		sudo apt-get install -y ant
 

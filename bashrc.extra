@@ -5,34 +5,37 @@ export PATH=${PATH}:/home/qiao/Android/Sdk/ndk-bundle
 export PATH=${PATH}:/home/qiao/Tools/scripts
 export PATH=${PATH}:/usr/share/tomcat7/bin
 export PATH=${PATH}:/usr/local/Cellar/tomcat/8.0.30/bin/catalina
+export PATH=${PATH}:/home/qiao/Tools/p4v-2015.2.1315639/bin
 export OPENGROK_TOMCAT_BASE=/usr/local/Cellar/tomcat/8.0.30/libexec
 export LIBGL_ALWAYS_SOFTWARE=1
 export ANDROID_NDK=${HOME}/Tools/android-ndk-r10e
 export ANDROID_NDK_HOME=$ANDROID_NDK
+export NDK_ROOT=$ANDROID_NDK
+export RobotVisionApp=${HOME}/projects/RobotVisionApp
 
 alias tree='tree --charset ASCII'
 alias htags='htags -aFghInosxv --show-position --tabs 4'
 alias rsync='rsync -rRvul --no-implied-dirs --times'
-alias grep='grep --color -rns --exclude-dir=".svn" --exclude-dir=".git"'
+alias grep='grep --color --exclude-dir=".svn" --exclude-dir=".git"'
 
 source ${HOME}/Tools/dot_files/bash/themes/colors.theme.bash
 source ${HOME}/Tools/dot_files/bash/aliases/available/general.aliases.bash
 
 if [ -f /opt/ros/indigo/setup.bash ]; then
-    source /opt/ros/indigo/setup.bash;
-fi;
+    source /opt/ros/indigo/setup.bash
+fi
 
 # Add tab completion for many Bash commands
 if which brew > /dev/null && [ -f "$(brew --prefix)/share/bash-completion/bash_completion" ]; then
     source "$(brew --prefix)/share/bash-completion/bash_completion";
 elif [ -f /etc/bash_completion ]; then
-    source /etc/bash_completion;
-fi;
+    source /etc/bash_completion
+fi
 
 # Enable tab completion for `g` by marking it as an alias for `git`
 if type _git &> /dev/null && [ -f /usr/local/etc/bash_completion.d/git-completion.bash ]; then
     complete -o default -o nospace -F _git g;
-fi;
+fi
 
 source ${HOME}/Tools/dot_files/bash/completion/available/git.completion.bash
 source ${HOME}/Tools/dot_files/bash/completion/available/brew.completion.bash
