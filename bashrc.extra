@@ -1,17 +1,17 @@
 export PATH=${PATH}:${HOME}/Tools/opengrok-0.12.1.5/bin
 export PATH=${PATH}:${HOME}/Tools/qtcreator-3.6.0/bin
-export PATH=${PATH}:/home/qiao/Android/Sdk/platform-tools
-export PATH=${PATH}:/home/qiao/Android/Sdk/ndk-bundle
-export PATH=${PATH}:/home/qiao/Tools/scripts
+export PATH=${PATH}:${HOME}/Android/Sdk/platform-tools
+export PATH=${PATH}:${HOME}/Tools/android-ndk-r10e
+export PATH=${PATH}:${HOME}/Tools/scripts
 export PATH=${PATH}:/usr/share/tomcat7/bin
 export PATH=${PATH}:/usr/local/Cellar/tomcat/8.0.30/bin/catalina
-export PATH=${PATH}:/home/qiao/Tools/p4v-2015.2.1315639/bin
+export PATH=${PATH}:${HOME}/Tools/p4v-2015.2.1315639/bin
 export OPENGROK_TOMCAT_BASE=/usr/local/Cellar/tomcat/8.0.30/libexec
 export LIBGL_ALWAYS_SOFTWARE=1
 export ANDROID_NDK=${HOME}/Tools/android-ndk-r10e
 export ANDROID_NDK_HOME=$ANDROID_NDK
 export NDK_ROOT=$ANDROID_NDK
-export RobotVisionApp=${HOME}/projects/RobotVisionApp
+export RobotVisionApp=${HOME}/projects/robotvisionapp
 
 alias tree='tree --charset ASCII'
 alias htags='htags -aFghInosxv --show-position --tabs 4'
